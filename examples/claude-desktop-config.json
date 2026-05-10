@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "ntfy": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/absolute/path/to/ntfy-mcp",
+        "run",
+        "python",
+        "-m",
+        "ntfy_mcp.server"
+      ],
+      "env": {
+        "NTFY_BASE_URL": "https://ntfy.sh",
+        "NTFY_TOPIC": "replace-with-long-random-topic",
+        "NTFY_ALLOWED_TOPICS": "replace-with-long-random-topic",
+        "NTFY_SOURCE": "claude",
+        "NTFY_DEFAULT_PRIORITY": "3",
+        "NTFY_MAX_MESSAGE_LENGTH": "1800"
+      }
+    }
+  }
+}
+

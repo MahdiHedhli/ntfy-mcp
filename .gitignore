@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Local secrets and machine-specific config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# macOS
+.DS_Store
+
+# Agent-local notes and private assistant metadata
+NOTES.md
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+COPILOT.md
+INSTRUCTIONS.md
+.codex/
+.claude/
+.cursor/
+.windsurf/

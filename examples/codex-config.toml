@@ -1,0 +1,14 @@
+[mcp_servers.ntfy]
+command = "uv"
+args = ["--directory", "/absolute/path/to/ntfy-mcp", "run", "python", "-m", "ntfy_mcp.server"]
+enabled = true
+enabled_tools = ["notify_user"]
+
+[mcp_servers.ntfy.env]
+NTFY_BASE_URL = "https://ntfy.sh"
+NTFY_TOPIC = "replace-with-long-random-topic"
+NTFY_ALLOWED_TOPICS = "replace-with-long-random-topic"
+NTFY_SOURCE = "codex"
+NTFY_DEFAULT_PRIORITY = "3"
+NTFY_MAX_MESSAGE_LENGTH = "1800"
+
